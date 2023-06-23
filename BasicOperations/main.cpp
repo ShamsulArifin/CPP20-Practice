@@ -7,22 +7,25 @@ int main()
 
   // Addition
   int result = number1 + number2;
-  std::cout << " addition result: " << result << std::endl;
+  std::cout << "addition result: " << result << std::endl;
 
   // Subtraction
   result = number2 - number1;
   std::cout << "subtraction result: " << result << std::endl;
 
-  //Multiplication
+  // Multiplication
   result = number1 * number2;
   std::cout << "multiplication result: " << result << std::endl;
 
-  //Division
+  // Division
   result = number2 / number1;
-  std::cout << " division result: " << result << std::endl;
+  std::cout << "division result: " << result << std::endl;
 
-  //Modulus
+  // Modulus
   result = number2 % number1;
-  std::cout << " modulus result: " << result << std::endl;
+  std::cout << "modulus result: " << result << std::endl;
+
+  result = 31 % 10;
+  std::cout << "result: " << result << std::endl;
   return 0;
 }
