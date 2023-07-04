@@ -36,7 +36,7 @@ int main()
   std::cout << "i: " << i << std::endl;
 
   //* Leave out the iterator declaration part from the loop
-  //size_t i{0};
+  // size_t i{0};
 
   for (; i < 10; ++i)
   {
