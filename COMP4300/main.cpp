@@ -18,22 +18,22 @@ public:
   {
   }
 
-  int getAvg()
+  int getAvg() const
   {
     return m_avg;
   }
 
-  int getID()
+  int getID() const
   {
     return m_id;
   }
 
-  std::string getFirst()
+  std::string getFirst() const
   {
     return m_first;
   }
 
-  std::string getLast()
+  std::string getLast() const
   {
     return m_last;
   }
@@ -45,6 +45,27 @@ public:
               << m_id << " "
               << m_avg << std::endl;
   }
+};
+
+class Course
+{
+  std::string m_name = "Course";
+  std::vector<Student> m_students;
+
+public:
+  Course() {}
+
+  Course(const std::string &name)
+      : m_name(name)
+  {
+  }
+
+  void addStudent(const Student &s)
+  {
+    // m_student.push_back(s);
+  }
+
+
 };
 
 int main(int argc, char *argv[])
